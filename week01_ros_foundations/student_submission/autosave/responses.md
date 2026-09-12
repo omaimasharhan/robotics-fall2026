@@ -1,0 +1,109 @@
+# Week 1: Discovering a Robot Through ROS 2
+
+## Student
+
+- Name: Omaima Sharhan
+- Email: omaima.sharhan19@myhunter.cuny.edu
+
+## final.architecture_evidence
+
+I would call it reactive because the robot looks at the current LiDAR reading and reacts to what is in front of it. It decides to move or stop based on what the sensor is currently telling it. For it to be a hybrid system, it would need something like planning, memory, or different states so it can make decisions based on more than just the current reading.  
+
+## final.course_reflection
+
+This activity gave me a better understanding of what is involved in robotics software and made me more interested in exploring it further. What I found interesting was how much information the program has to process before the robot can make what seems like a simple decision, such as moving forward or stopping. I already had some experience with Python, but working with ROS 2 and LiDAR showed me how programming can be connected to sensors and real time behavior. One part that stood out to me was understanding how the LiDAR data is organized. At first, I was unsure what the indexes represented, but I learned that each index corresponds to an angle and that the value at that index represents the distance measured in that direction. Once I understood that, it became easier to see how the robot can determine what is in front of it and use that information to make a decision. The activity also made me think more about the importance of safety when writing software for robots. A robot cannot simply assume that the environment is safe when a sensor reading is missing or invalid. Having the robot stop when it cannot get a reliable measurement, along with the watchdog and command guard, showed me that safety needs to be considered at different parts of the system. Overall, this activity gave me a better understanding of how programming, problem-solving, and robotics come together to create autonomous behavior. It also increased my interest in learning more about robotics and how software can be used to control autonomous systems. 
+
+
+
+
+
+ 
+
+
+## final.hardware_next
+
+I would test more situations where the LiDAR readings are missing or invalid and test different distances from obstacles. I would also make sure the robot always stops when it should and that the command guard and watchdog work correctly before using it on real hardware. 
+
+## final.middleware_debugging
+
+I would use the ROS graph to see if the different parts are connected correctly. I would check if the node is receiving /scan and if it is publishing to /student_cmd_vel. If one of these connections is missing, I would know where to look for the problem. 
+
+## final.system_synthesis
+
+Robotics software is difficult because the robot has to make decisions based on sensor information, and that information is not always perfect. In this lab, the robot uses LiDAR to see how far away objects are. The ranges list has different distances, and each index represents a different angle. The program has to figure out which readings are in front of the robot and which readings are valid. This makes the software more difficult because the robot cannot just assume every sensor reading is correct. The architecture I implemented is a reactive architecture because the robot examines the current LiDAR information and responds accordingly. The front_distance() function goes through the LiDAR readings, calculates the angle for each index, checks if it is in front, and ignores readings that are not valid. It then finds the closest valid distance. The decide_velocity() function takes that distance and decides whether the robot should move or stop. If there is no valid distance or an obstacle is too close, it returns 0.0. If the path is clear, it allows the robot to move but keeps the speed between 0 and 0.18 m/s. ROS 2 connects the different parts of the system by having the LiDAR send information through /scan to the ROS node. The node uses the two decision functions and publishes the movement decision through /student_cmd_vel. The command guard then provides another safety layer before commands can reach the robot. The watchdog also stops the robot if scans stop arriving. This shows how the sensor, ROS node, command system, and robot work together. Timing and invalid sensor data affected safety because the robot cannot assume that missing or old information means the path is clear. If there is an invalid scan or a stale scan, the robot stops instead of continuing to move. This helped me understand why the robot needs to react safely when the sensor information is not reliable. The layer that can restrict unsafe motion is the command guard because it checks the movement command before it reaches the robot. This gives the system another safety check in case the decision code sends a command that is not safe.
+
+## final.timing_evidence
+
+I would say the stale scan result affected my understanding the most because it showed me that the robot should stop if the sensor information is old. The robot cannot assume the path is still clear because something could have changed.
+
+## mission_1.command_path_explanation
+
+A proposed command travels on /student _cmd_vel. The guard subscribes to it, checks the command and then publishes the approved command  on /cmd_vel
+
+## mission_1.graph_explanation
+
+A ROS 2 graph shows the components that are running and the ways they communicate.
+
+## mission_1.guided_checks
+
+{'bridge_info': True, 'command_topics': True, 'guard_info': True, 'node_list': True, 'scan_info': True, 'scan_message': True}
+
+## mission_1.scan_observation
+
+I found many numbers in the ranges field, which represent distance measurements in meters around the robot using LIDAR. It also includes the minimum and maximum range, as well as the minimum and maximum angle.
+
+## mission_1.tools_explanation
+
+Gazebo is responsible for simulation and sensing for the robot, while RViz is responsible for visualizing the robot and its information.
+
+## mission_2.measurement_explanation
+
+For the curve motion trial, the estimated traveled path was 0.366 m and the start-to-end distance was 0.317 m. They are different because the start-to-end distance measures the straight-line distance between the robot's starting and ending positions, while the estimated traveled path measures the distance the robot traveled along its curved path using its forward and turning motion.
+
+## mission_2.modified_settings
+
+{'linear_x': 0.12, 'angular_z': 0.6, 'duration': 4.0}
+
+## mission_2.motion_comparison
+
+For the straight motion trial, my prediction was accurate because I predicted that the command path length would be 0.45 m, which matched the measured value in the table. The forward speed was 0.15 m/s, the command time was 3.0 s, and the turning speed was 0 rad/s, so I calculated the path length as 0.15 × 3.0 = 0.45 m.
+
+## mission_2.prediction_locks
+
+{'curve': '2026-09-08T03:30:25.461352+00:00', 'curve_modified': '2026-09-08T03:40:41.176084+00:00', 'rotation': '2026-09-08T03:17:42.089095+00:00', 'straight': '2026-09-08T03:10:34.121919+00:00'}
+
+## mission_2.predictions
+
+{'curve': 'I predict a curved path because the robot moves forward and turns right at the same time for 4s', 'curve_modified': ' This curve should be tighter because the robots linear velocity is smaller and its angular velocity is larger making the curve tighter than the previous example.', 'rotation': 'I predict its position will stay the same while its direction will rotate left 1.5 radians.', 'straight': 'I predict the robot will finish 0.45 m from its starting point.'}
+
+## mission_2.safety_explanation
+
+The command guard checks all driving commands before they reach the robot by checking whether the speed is too large or contains invalid values and rejecting invalid commands.
+The final zero command sets the forward and turning speeds to 0 after a trial is finished so the robot stops moving.
+The timeout is needed if a program crashes or stops sending commands. After 0.5 seconds without a new command, the guard sends a stop command to prevent the robot from continuing to move.
+
+## mission_3.data_to_command
+
+The first function, front_distance(), calculates the angle of each LiDAR index and only reads values that are in the front sector, finite, and greater than zero. It stores the valid readings and finds the nearest distance. If there are no valid readings, it returns None. The second function, decide_velocity(), receives the nearest front distance. If the distance is None or an obstacle is too close, it returns 0.0 to stop the robot. If the path is clear, it returns the forward speed while limiting it to between 0 and 0.18 m/s.
+
+## mission_3.missing_data_safety
+
+It stops because it can’t tell if the path is clear or if there is an obstacle. It’s safer for the robot to stop instead of moving when it doesn’t have a valid reading.
+
+## mission_3.system_layers
+
+The decision functions use the LiDAR readings to decide if the robot should move or stop. The ROS node gets the sensor information and sends the speed command. Then the command guard checks the command to make sure it is safe before it reaches the robot. 
+
+
+
+## part_1.activity
+
+{'sensor': {'normal': True, 'changed': True}, 'timing': {'normal': True, 'changed': True}, 'hardware': {'normal': True, 'changed': True}}
+
+## part_2.activity
+
+{'reactive': {'normal': True, 'changed': True}, 'behavior': {'normal': True, 'changed': True}, 'deliberative': {'normal': True, 'changed': True}, 'hybrid': {'normal': True, 'changed': True}, 'safety': {'normal': True, 'changed': True}}
+
+## part_3.activity
+
+{'middleware': {'single': True, 'multiple': True}, 'communication': {'topic': True, 'service': True}, 'failure': {'healthy': True, 'sensor': True, 'type': True, 'visualization': True}, 'inspection': {'nodes': True, 'node_info': True, 'topics': True, 'topic_info': True, 'echo': True, 'services': True, 'broken': True}}
