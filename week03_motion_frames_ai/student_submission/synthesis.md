@@ -1,0 +1,3 @@
+# Technical synthesis
+
+Even if the robot motion program works correctly, it does not mean it will work well in the real world without any complications. One example would be if the robot has to move to a certain position at a certain time, but there is an object or a person in the way. It would not be safe for the robot to continue its mission without detecting the obstacle. The robot would need sensors to detect people or objects and stop before getting too close to them. Additional evidence would be needed by testing the robot in a real or shared environment and observing how it reacts to obstacles and people. This would help show if the robot is safe and works properly around others.

@@ -1,0 +1,52 @@
+
+def build_pattern(pattern_name: str) -> list[Segment]:
+    """Return ordered, bounded motion segments for the assigned pattern.
+
+    Supported assignments are ``rounded_rectangle``, ``l_path``, and
+    ``alternating_arcs``. Do not include the final stop; the ROS wrapper
+    always publishes it and the evaluator verifies it.
+    """
+    if pattern_name != "rounded_rectangle":
+        raise ValueError(f"Unknown pattern name: {pattern_name}")
+
+    # Motion parameters
+    straight_speed = 0.10       # m/s
+    radius = 0.15               # m
+    angular_speed = straight_speed / radius  # rad/s
+    arc_angle = 3.141592653589793 / 2.0
+
+    # Durations needed to travel the specified distances.
+    long_straight_time = 0.40 / straight_speed
+    short_straight_time = 0.25 / straight_speed
+    arc_time = arc_angle / angular_speed
+
+    segments = []
+
+    # Four repetitions of:
+    # 0.40 m straight -> 90-degree left arc -> 0.25 m straight
+    for _ in range(4):
+        segments.append(
+            Segment(
+                linear_x=straight_speed,
+                angular_z=0.0,
+                duration=long_straight_time,
+            )
+        )
+
+        segments.append(
+            Segment(
+                linear_x=straight_speed,
+                angular_z=angular_speed,
+                duration=arc_time,
+            )
+        )
+
+        segments.append(
+            Segment(
+                linear_x=straight_speed,
+                angular_z=0.0,
+                duration=short_straight_time,
+            )
+        )
+
+    return segments
