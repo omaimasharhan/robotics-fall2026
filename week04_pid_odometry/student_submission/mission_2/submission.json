@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-09-30T21:46:06",
+  "mission_id": "mission_2",
+  "student": {
+    "name": "",
+    "student_id": "",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "The estimated forward distance will be greater than the actual distance traveled because the forward pod scale is too large, while the sideways distance estimation will be smaller than the actual distance traveled because the strafe pod scale is too small.",
+    "calibration_analysis": "The prediction was that a too large forward pod scale would result in an estimated distance greater than the actual distance traveled, while a too small strafe pod scale would result in an estimated distance smaller than the actual distance traveled. The forward scale affects the estimated distance depending on how large or small the scale is. The sideways pod is needed because the forward pod alone cannot measure sideways movement, which can cause the estimated final position to differ from the actual position. Remaining drifts can remain after calibration because of wheel slipping or calibration errors."
+  },
+  "params": {
+    "forwardInPerTick": 0.0499,
+    "strafeInPerTick": 0.0499
+  },
+  "metrics": {
+    "max_error_in": 0.17500189827539156,
+    "final_error_in": 0.12862947718156614,
+    "passed": true
+  },
+  "result": {
+    "passed": true,
+    "maxError": 0.17500189827539156,
+    "finalError": 0.12862947718156614,
+    "params": {
+      "forwardInPerTick": 0.0499,
+      "strafeInPerTick": 0.0499
+    }
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_odometry_test.gif"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "mission_id": "mission_1",
+  "files": [
+    {
+      "path": "submission.json",
+      "size_bytes": 1798,
+      "crc32": "07308a50"
+    },
+    {
+      "path": "activity_gifs/latest_arm_tuning.gif",
+      "size_bytes": 454834,
+      "crc32": "bed69791"
+    },
+    {
+      "path": "explanation.md",
+      "size_bytes": 794,
+      "crc32": "45e231ca"
+    }
+  ]
+}

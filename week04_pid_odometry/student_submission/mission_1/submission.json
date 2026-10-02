@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-09-29T23:53:47",
+  "mission_id": "mission_1",
+  "student": {
+    "name": "",
+    "student_id": "",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "With too little Kp, I expect the controller to respond weakly to the error, even if the arm is far from its target. With too little Kd, I expect the arm to overshoot the target and oscillate .",
+    "tuning_analysis": "I predicted that too little Kp would cause a weak response to the error and too little Kd would cause the arm to overshoot and oscillate. I changed the shoulder and elbow controllers to improve their movement. The hold phase showed that both joints got close to their targets but still had some error. Gravity compensation helped the arm counteract gravity, allowing the shoulder and elbow to hold their positions more accurately and successfully complete all three poses."
+  },
+  "params": {
+    "activity": "two_link_arm_pid_tuning",
+    "kp1": 6,
+    "ki1": 0.9,
+    "kd1": 1.3,
+    "kp2": 6,
+    "ki2": 0.9,
+    "kd2": 1.2,
+    "gravityCompensation": true
+  },
+  "metrics": {
+    "completed": true,
+    "posesHeld": 3,
+    "posesRequired": 3
+  },
+  "checkin": {
+    "note": "I predicted that too little Kp would cause a weak response to the error and too little Kd would cause the arm to overshoot and oscillate. I changed the shoulder and elbow controllers to improve their movement. The hold phase showed that both joints got close to their targets but still had some error. Gravity compensation helped the arm counteract gravity, allowing the shoulder and elbow to hold their positions more accurately and successfully complete all three poses.",
+    "choice": "",
+    "complete": true
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_arm_tuning.gif"
+  ]
+}
