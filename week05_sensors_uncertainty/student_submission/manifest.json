@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "lab_id": "week05_sensors_uncertainty",
+  "generated_at": "2026-10-05T01:06:33.023811+00:00",
+  "student": {
+    "course_id": "CSCI345",
+    "email": "omaima.sharhan19@myhunter.cuny.edu",
+    "name": "Omaima Sharhan"
+  },
+  "completed_missions": [
+    "mission_1",
+    "mission_2",
+    "mission_3"
+  ],
+  "files": [
+    ".gitkeep",
+    "autosave/responses.json",
+    "autosave/responses.md",
+    "final_reflection.md",
+    "mission_1/evidence.png",
+    "mission_1/explanation.md",
+    "mission_1/measurements.csv",
+    "mission_1/submission.json",
+    "mission_2/evidence.png",
+    "mission_2/explanation.md",
+    "mission_2/measurements.csv",
+    "mission_2/submission.json",
+    "mission_3/explanation.md",
+    "mission_3/submission.json",
+    "student.json"
+  ]
+}

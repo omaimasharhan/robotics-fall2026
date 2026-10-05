@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_id": "mission_3",
+  "saved_at": "2026-10-04T03:03:34.355313+00:00",
+  "evidence": {
+    "evidence_id": "aff0fa040e7f5877",
+    "context_results": {
+      "Warehouse": {
+        "context": "Warehouse",
+        "settings": {
+          "threshold": 0.7,
+          "margin": 0.25,
+          "weight_a": 0.35,
+          "filter_method": "Raw/hold last",
+          "window": 3,
+          "confirmations": 1,
+          "missing_policy": "Stop"
+        },
+        "metrics": {
+          "false_safe_rate": 0.0,
+          "unnecessary_stop_rate": 0.05,
+          "maximum_detection_delay": 0.0,
+          "collision_events": 0
+        },
+        "criteria": {
+          "false_safe_limit": 0.05,
+          "unnecessary_stop_limit": 0.35,
+          "delay_limit": 0.55
+        },
+        "scenarios": [
+          {
+            "scenario": "clearly_safe",
+            "false_safe": 0,
+            "unnecessary_stop": 1,
+            "collision_events": 0,
+            "final_decision": "MOVE"
+          },
+          {
+            "scenario": "stationary_danger",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "near_threshold",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "SLOW"
+          },
+          {
+            "scenario": "fast_approach",
+            "false_safe": 0,
+            "unnecessary_stop": 2,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "receding",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "MOVE"
+          },
+          {
+            "scenario": "conflicting_sensors",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "SLOW"
+          },
+          {
+            "scenario": "dropout_burst",
+            "false_safe": 0,
+            "unnecessary_stop": 7,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          }
+        ],
+        "passed": true
+      },
+      "Assistive": {
+        "context": "Assistive",
+        "settings": {
+          "threshold": 0.9,
+          "margin": 0.3,
+          "weight_a": 0.35,
+          "filter_method": "Raw/hold last",
+          "window": 3,
+          "confirmations": 1,
+          "missing_policy": "Stop"
+        },
+        "metrics": {
+          "false_safe_rate": 0.0,
+          "unnecessary_stop_rate": 0.006578947368421052,
+          "maximum_detection_delay": 0.0,
+          "collision_events": 0
+        },
+        "criteria": {
+          "false_safe_limit": 0.01,
+          "unnecessary_stop_limit": 0.45,
+          "delay_limit": 0.35
+        },
+        "scenarios": [
+          {
+            "scenario": "clearly_safe",
+            "false_safe": 0,
+            "unnecessary_stop": 1,
+            "collision_events": 0,
+            "final_decision": "MOVE"
+          },
+          {
+            "scenario": "stationary_danger",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "near_threshold",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "fast_approach",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "receding",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "MOVE"
+          },
+          {
+            "scenario": "conflicting_sensors",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          },
+          {
+            "scenario": "dropout_burst",
+            "false_safe": 0,
+            "unnecessary_stop": 0,
+            "collision_events": 0,
+            "final_decision": "STOP"
+          }
+        ],
+        "passed": true
+      }
+    }
+  }
+}

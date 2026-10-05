@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_id": "mission_1",
+  "saved_at": "2026-10-03T02:34:30.127353+00:00",
+  "evidence": {
+    "evidence_id": "a2e095fa9c5642c7",
+    "metrics": {
+      "count": 240,
+      "valid_count": 236,
+      "dropout_count": 4,
+      "mean": 1.980084745762712,
+      "median": 1.99,
+      "variance": 0.11358722683014785,
+      "standard_deviation": 0.337027041689755,
+      "bias": -0.019915254237288016,
+      "outlier_count": 32
+    },
+    "profile": "outlier_prone"
+  }
+}
