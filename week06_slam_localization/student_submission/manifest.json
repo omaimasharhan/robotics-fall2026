@@ -1,0 +1,36 @@
+{
+  "files": {
+    "autosave/responses.json": "4e8056f2bea562de5231c08ac3f723665630951effc99b76377dfab237859e5f",
+    "autosave/responses.md": "e8a8a8b66287666efda874db5e9b0cabcfd9617823cf70fcde55cb20bf630feb",
+    "final_reflection.md": "bd205846dbd99119fd500735c7f79a2b74c2941d48387e10f2c48429a03c28a9",
+    "final_synthesis.md": "958a60427ede577b0668a67ccc6a719d7bafbfde637ddeba0cf0417d19d649ab",
+    "mission_1/analysis.json": "f7d71a81323053c186552c048de09c8d75cdaf053f2eab5d8d773b805fc96c87",
+    "mission_1/evidence.json": "5592a781db8758ad6cb537202ee6e41b2ba5eb807396d7f5b06c965910feae15",
+    "mission_1/explanation.md": "cd1083794352448b0fb9bf03da899d29b67f3d0abcdd0c2732d6176dc51ee748",
+    "mission_1/map.pgm": "7e3c6d86723d67b21e2c79e67acb2db43241b457775376e0e7df23b579facc53",
+    "mission_1/map.yaml": "c1a6ff89629941a980b2ae39aefc8fda844698b95c53d03848556369378cce80",
+    "mission_1/rviz_screenshot.png": "ed7dbf3e279d36a9a61baf5dec414628c21c67bba739bacb8c7c1073af6d6870",
+    "mission_1/submission.json": "2640836bdeb38c0ad51b99ca88ec10c0bdc90911170c2956a505b970600cac4c",
+    "mission_2/analysis.json": "af7c5830be0e745cf0c2c33ed3fb4c42b063830347da0ea182e4b83c84f9e094",
+    "mission_2/evidence.json": "f9d4f6b465c82bcc85049dbbd5349b6dde078a72cfb50939fbc672d1af49f15d",
+    "mission_2/explanation.md": "5f0b9afe6dff749897d9b021fb47c41b49c96fd2d62bdbb13bae656165bccefe",
+    "mission_2/map.pgm": "2a3c84b3b7b77831c1f1522731ae5d30991bdc40305ccc71a0103629977f94e9",
+    "mission_2/map.yaml": "29253cc12da26be30d6cb277139fddcbef5f305204cc5301cab6ba963e116e6d",
+    "mission_2/rviz_screenshot.png": "9baaa2d2821ba70d329f5a71824753d56a3fb673f7fa09c772d6f8c06631bc6c",
+    "mission_2/submission.json": "60e0735f01e9552396408b0aef960cc8775fb32ae754b2909a514985f843b650",
+    "student.json": "0560f5bb716976b0dbbcf36ca9654a02bd267fd883aaf6398392c5022aab61a4"
+  },
+  "generated_at": "2026-10-24T03:19:34.183110+00:00",
+  "lab_id": "week06_slam_localization",
+  "mission_signatures": {
+    "mission_1": "00e9abf56a68dcb1",
+    "mission_2": "563c355630f3a99e"
+  },
+  "response_signature": "7b0f8874947b0808",
+  "schema_version": 2,
+  "student": {
+    "course_id": "CSCI350",
+    "email": "omaima.sharhan19@myhunter.cuny.edu",
+    "name": "Omaima Sharhan"
+  }
+}
