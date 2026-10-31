@@ -1,0 +1,9 @@
+# line_following
+
+## comparison
+For the practice attempt, I kept all the original settings the same except for the gain, which I increased to 0.15. At the beginning, the line was off center, but as the robot continued moving, it became more centered and aligned with the yellow dot. The image error started to the right of center and eventually reached zero, meaning the line was centered in the camera image. The mask appeared clearly in this attempt, showing that the robot was detecting the line correctly. Its mean absolute image error was about 0.030. 
+
+For the track attempt, I kept the gain at 0.15 and decreased the speed from 0.16 to 0.13 because the robot struggled to follow the curved path. When turning, the line was far off center and the robot kept oscillating back and forth. After decreasing the speed, the mean absolute image error decreased from 0.31 to 0.26 showing an improvement in line tracking. The mask appeared clearly when the robot was moving in a straight line, but the line moved out of the camera's view when the robot turned. This suggests that reducing the speed helped the robot correct its steering, although it still struggled to follow the curves. 
+
+## limits
+One failure occurred when the robot followed a curved path and the magenta line moved out of the camera's view. This started in image processing because the robot could no longer detect the line correctly. If it happened with a real delivery robot around people, it could create safety hazards if the robot failed to detect its surroundings and collided with someone. Additional sensing, such as obstacle detection using LiDAR or depth cameras would help the robot detect people and objects instead of relying only on the camera to follow the line. One additional test would be to place obstacles along the robot's path and test whether it can detect them and stop safely. 

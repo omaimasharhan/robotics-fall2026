@@ -1,0 +1,7 @@
+# mission_2
+
+## choice
+I recommend the learned detector because it correctly located the mug in normal conditions, with 1 correct box and 0 false boxes. Its mask IoU was 0.5419, and its dice score was 0.70, which measures how much the predicted mask overlaps with the correct mask. However, even if the foreground mask shows the shape of an object, it does not necessarily identify it as the requested mug. One limitation is that the test used only a small number of images, so the results could be different with different lighting conditions, objects, or backgrounds. 
+
+## comparison
+For the normal, dim, and occluded conditions, the classical detector had the same results which are 0 correct boxes, 2 false boxes, and 2 missed mugs. This means it was not able to correctly identify the mug in any of the three conditions. The learned detector performed better in normal conditions, with 1 correct box, 0 false boxes, and 1 missed mug. However in dim and occluded conditions, it had 0 correct boxes, 0 false boxes, and 2 missed mugs. This means neither detector was able to locate the mug in dim or occluded conditions, but the learned detector had fewer false boxes. For example in the paired image normal_1, the learned detectors box was around the mug, while the classical detectors box was too large and did not correctly match the mug. This shows that the learned detector was better at locating the mug in normal lighting. 
