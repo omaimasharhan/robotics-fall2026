@@ -1,0 +1,14 @@
+{
+  "run_id": "constrained_astar_0_baseline_1edba02e17",
+  "map": "constrained",
+  "planner": "astar",
+  "sample": 0,
+  "point": {
+    "t": 2.616,
+    "x": -3.874999999999982,
+    "y": -2.875000000000257,
+    "speed_mps": 5.456572532722069e-14
+  },
+  "tracking_error_m": 2.5712765250318625e-13,
+  "feature": "Straight segment"
+}
