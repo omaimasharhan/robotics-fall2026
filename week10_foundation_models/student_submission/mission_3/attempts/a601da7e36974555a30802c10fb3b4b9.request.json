@@ -1,0 +1,29 @@
+{
+  "job_id": "a601da7e36974555a30802c10fb3b4b9",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Move the robot to the blue target at (11,1). Follow the route step by step and don't skip any part. Start at (1,7) and move UP one space at a time until you reach (1,1). Then move RIGHT one space at a time until you reach (7,1). Next, move DOWN until you reach (7,7). After that, move RIGHT until you reach (11,7). Finally, move UP until you reach (11,1). Keep checking your current coordinates after each move. If you hit a wall, don't keep repeating the same move or choose STOP. Try another direction that is open. Only stop once you reach the blue target.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T21:58:20.987170+00:00",
+  "comparison_ids": [
+    "e8b66944f5b745eb9b1b3c0d4139209b",
+    "7517e72d887f40e88929daeea1b84b77",
+    "f705bb2a953d4feaa1209e8da4f03581"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

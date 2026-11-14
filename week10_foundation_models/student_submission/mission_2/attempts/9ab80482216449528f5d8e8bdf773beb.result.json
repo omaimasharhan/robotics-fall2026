@@ -1,0 +1,4 @@
+{
+  "status": "error",
+  "error": "Generation exceeded three minutes. Try a shorter prompt or restart the model worker."
+}

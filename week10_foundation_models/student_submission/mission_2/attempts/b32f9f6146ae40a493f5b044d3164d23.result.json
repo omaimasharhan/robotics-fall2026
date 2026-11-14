@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "b32f9f6146ae40a493f5b044d3164d23",
+    "kind": "vision",
+    "case": "custom",
+    "prompt": "Identify the tool in the foreground of the workbench and describe the visible features that helped you identify it. If you are unsure about the tool's identity, explain what makes it unclear instead of guessing.",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-13T03:43:51.390195+00:00",
+    "comparison_ids": [
+      "25d61d56980741e8bc129e13479185ca",
+      "eb149878a1ef409a86409610bd2baf32",
+      "cdc482a4b35245de95248f3f860f86bb"
+    ],
+    "output": "The tool in the foreground of the workbench is a measuring tape. The visible features that helped you identify it include the tape's length, the markings on the tape, and the presence of a hole in the tape. The measuring tape is likely used for measuring the length of objects, such as the height of a person or the width of a piece of furniture.",
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "system_prompt": "",
+    "model_input": "Identify the tool in the foreground of the workbench and describe the visible features that helped you identify it. If you are unsure about the tool's identity, explain what makes it unclear instead of guessing.",
+    "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+    "image_preprocessing": {
+      "longest_edge": 512,
+      "image_splitting": false
+    },
+    "generated_tokens": 74,
+    "max_new_tokens": 80,
+    "generation_seconds": 133.882,
+    "truncated": false,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-13T03:46:05.363928+00:00"
+  }
+}

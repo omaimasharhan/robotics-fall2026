@@ -1,0 +1,14 @@
+{
+  "job_id": "2ba260f69e87414fb3757ca86ae7316c",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Inspect the blue cup on the shelf and move it to the desk if you have the capability to pick it up. If you can\u2019t pick it up or don\u2019t see the blue cup then report what you observe and explain the limitation.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T04:19:54.299802+00:00",
+  "comparison_ids": [
+    "d7606d1588554e28a22344a0e732ca44",
+    "1122252ac47c4144bab899e6cc5a2365",
+    "2cf96ed62ca54605a547c8435ad8e9b9"
+  ]
+}

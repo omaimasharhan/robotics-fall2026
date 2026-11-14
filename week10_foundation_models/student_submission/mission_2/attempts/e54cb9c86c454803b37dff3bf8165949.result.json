@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "e54cb9c86c454803b37dff3bf8165949",
+    "kind": "vision",
+    "case": "custom",
+    "prompt": "Identify the tool in the foreground and describe the visible features that helped you recognize it. If unsure, explain why.",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-13T20:46:23.555103+00:00",
+    "comparison_ids": [
+      "fc73d6530e18448a87fb602380486ae5",
+      "a16e40ca8f844434a5df9e975a286d56",
+      "d1b9770c0070408784d1c2a2d496c416"
+    ],
+    "output": "The tool in the foreground is a measuring tape. The visible features that helped you recognize it include the tape's length, the markings on the tape, and the presence of a hole in the tape.",
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "system_prompt": "",
+    "model_input": "Identify the tool in the foreground and describe the visible features that helped you recognize it. If unsure, explain why.",
+    "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+    "image_preprocessing": {
+      "longest_edge": 512,
+      "image_splitting": false
+    },
+    "generated_tokens": 41,
+    "max_new_tokens": 80,
+    "generation_seconds": 86.519,
+    "truncated": false,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-13T20:48:16.906164+00:00"
+  }
+}

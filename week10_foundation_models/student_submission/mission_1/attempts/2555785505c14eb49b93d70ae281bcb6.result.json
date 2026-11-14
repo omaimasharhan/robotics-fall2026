@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "2555785505c14eb49b93d70ae281bcb6",
+    "kind": "language",
+    "case": "custom",
+    "prompt": "Inspect the blue cup on the shelf and move it to the desk if you have the capability to pick it up. If you can\u2019t pick it up or don\u2019t see the blue cup then report what you observe and explain the limitation.",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-13T05:10:59.298877+00:00",
+    "comparison_ids": [
+      "d7606d1588554e28a22344a0e732ca44",
+      "1122252ac47c4144bab899e6cc5a2365",
+      "2cf96ed62ca54605a547c8435ad8e9b9"
+    ],
+    "output": "The robot can inspect the blue cup on the shelf and move it to the desk if it has the capability to pick it up. If it can't pick it up or doesn't see the cup, it reports what it observes and explains the limitation.",
+    "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "model_revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "system_prompt": "You are helping a mobile robot. It starts at base. It can navigate to base, shelf or desk, inspect a known object, report observations, or stop. There is a cup on the shelf and a book on the desk. The robot has a camera and wheels but no arm or gripper. It cannot pick up or carry objects. Suggest a short plan using only these capabilities. If information is missing, ask a specific clarification question. If the task is impossible for this robot, explain why. Use at most four short sentences.",
+    "model_input": "Inspect the blue cup on the shelf and move it to the desk if you have the capability to pick it up. If you can\u2019t pick it up or don\u2019t see the blue cup then report what you observe and explain the limitation.",
+    "image_sha256": null,
+    "image_preprocessing": null,
+    "generated_tokens": 51,
+    "max_new_tokens": 96,
+    "generation_seconds": 102.132,
+    "truncated": false,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-13T05:12:41.546391+00:00"
+  }
+}

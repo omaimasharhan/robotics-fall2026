@@ -1,0 +1,14 @@
+{
+  "job_id": "332a5aff5cb84fada9c4041774d6def0",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "Identify the tool in the foreground and describe the visible features that helped you recognize it. If unsure, explain why.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T03:15:02.757449+00:00",
+  "comparison_ids": [
+    "5bda25fa560c40f8be090d42a5c48f34",
+    "f90783829f314494a7566bcfc45d2cf3",
+    "8bb635f4b9ec42baa945a155ce97efb3"
+  ]
+}

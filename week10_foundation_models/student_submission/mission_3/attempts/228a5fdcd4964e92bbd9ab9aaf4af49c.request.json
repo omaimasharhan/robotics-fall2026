@@ -1,0 +1,29 @@
+{
+  "job_id": "228a5fdcd4964e92bbd9ab9aaf4af49c",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Move the robot to the blue target at (11,1). First, move UP until you reach (1,1), then go RIGHT until you reach (7,1). After that, go DOWN to (7,7) and RIGHT until you reach (11,7). Finally, move UP until you reach the target. Check your position as you move, and if you hit a wall, try a different direction instead of getting stuck repeating the same move or choosing STOP. Only stop when you reach the target.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T21:55:44.324216+00:00",
+  "comparison_ids": [
+    "e8b66944f5b745eb9b1b3c0d4139209b",
+    "7517e72d887f40e88929daeea1b84b77",
+    "f705bb2a953d4feaa1209e8da4f03581"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

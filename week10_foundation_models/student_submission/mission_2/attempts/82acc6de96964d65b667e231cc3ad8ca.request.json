@@ -1,0 +1,14 @@
+{
+  "job_id": "82acc6de96964d65b667e231cc3ad8ca",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "Identify the tool in the foreground of the workbench and describe the features you see that helped you identify it. Also, locate the black vertical metal post compared to the tool and describe where it is based on the image. Then decide if the tool is suitable for the robot's task. If you are missing information or are unsure explain what is missing instead of guessing.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T04:21:41.658104+00:00",
+  "comparison_ids": [
+    "25d61d56980741e8bc129e13479185ca",
+    "eb149878a1ef409a86409610bd2baf32",
+    "cdc482a4b35245de95248f3f860f86bb"
+  ]
+}

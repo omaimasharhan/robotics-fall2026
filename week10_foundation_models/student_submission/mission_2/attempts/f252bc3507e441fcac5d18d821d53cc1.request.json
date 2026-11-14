@@ -1,0 +1,14 @@
+{
+  "job_id": "f252bc3507e441fcac5d18d821d53cc1",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "Identify the tool in the foreground of the workbench and describe the visible features that helped you identify it. If you are unsure about the tool's identity, explain what makes it unclear instead of guessing.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T04:10:35.846194+00:00",
+  "comparison_ids": [
+    "25d61d56980741e8bc129e13479185ca",
+    "eb149878a1ef409a86409610bd2baf32",
+    "cdc482a4b35245de95248f3f860f86bb"
+  ]
+}
