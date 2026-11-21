@@ -1,0 +1,6 @@
+{
+  "case": "ambiguous",
+  "phase": "CLARIFY",
+  "message": "which cup are you referring to the blue or red cup?",
+  "rationale": "The baseline REQUEST was unclear because it did not specify which cup to bring. The person needs to be specific when making a request because the robot cannot know which cup they are referring to without that information."
+}

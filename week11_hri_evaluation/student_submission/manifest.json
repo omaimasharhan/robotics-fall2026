@@ -1,0 +1,13 @@
+{
+  "mission_1/controller.py": "19e7528b528d8f5eb7ede0d5c25a9a042558f15b52de6fdd83f31aedc2e8e136",
+  "mission_1/checks.json": "eb88bd01cc74dcabc113bbd8e760e3989063139103e6c43f8e0a6409597a4248",
+  "mission_1/ros_trial.json": "ce37560fb1a3552004e76e356b86d2feef74f64281a7125bbc0e1cc5f946efbc",
+  "mission_1/guard_explanation.md": "e49aa5e7b0d928f689ee74bd0135075bf6e4d42182eae0d1afd1f25885a7c12f",
+  "mission_2/voice_trials.json": "3832fd5ff1d84439ebf1b58e54a6b71cf6c0ba9516b9a870ed21ca3ce130e0a6",
+  "mission_2/redesign.json": "bba62e99c5e75cc6b83193ba4d222a105c0776e3fa8a9c9aed8d81a90e74d20e",
+  "mission_2/retest.json": "951c21978d31b3c769e967df5ecb8bc1921c5624de269370dfd189c79d4fce36",
+  "mission_2/analysis.md": "d51f19ba62c349a8388600ceee7559dea3b0a8d71c759199fc7225974c38a0a7",
+  "mission_3/mode_trials.json": "fa73e8c1b0795e0b8befbba23e8c7d25e90eb85b217c0bd8dfe0f97f42fb9932",
+  "technical_synthesis.md": "bf973037fdec5796f46af96fa46cc4750a9a4838c9b81a1584940d705e2b7278",
+  "final_reflection.md": "0f028e659497a33098704a222bbdd40f7a713619ef88759507ddca6a6a4bb86d"
+}

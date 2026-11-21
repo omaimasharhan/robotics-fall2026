@@ -1,0 +1,1 @@
+In the baseline the robot received the request "Bring me the cup" so it had to ask which cup I was referring to. while in the retest I was more specific and asked for the blue cup. This helped the robot understand which cup I was referring to and complete the delivery without needing further clarification.
